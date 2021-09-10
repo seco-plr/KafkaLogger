@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: "localhost:9092"
+        bindings:
+          comments:
+            destination: "comments.topic"
+          blog-entries:
+            destination: "blog-entries.topic"
